@@ -1,0 +1,19 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Image extends Model
+{
+
+    protected $table = 'images';
+
+    protected $guarded = [];
+
+    //get the owen of the image
+    public function imageable(){
+
+        return $this->morphTo();
+    }
+}
