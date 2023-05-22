@@ -62,10 +62,20 @@
                                             <td>{{$student->classroom->class_name}}</td>
                                             <td>{{$student->section->section_name}}</td>
                                             <td>
-                                                <a href="{{route('students.edit',$student->id)}}" class="btn btn-info btn-sm" role="button" aria-pressed="true" title="{{ trans('Students_trans.Edit') }}"><i class="fa fa-edit"></i></a>
-                                                <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#delete_student{{ $student->id }}" title="{{ trans('Students_trans.Delete') }}"><i class="fa fa-trash"></i></button>
-                                                <a href="{{route('students.show',$student->id)}}" class="btn btn-warning btn-sm" role="button" aria-pressed="true"title="{{ trans('Students_trans.show') }}"><i class="fa fa-eye"></i></a>
-                                                <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#graduate_student{{ $student->id }}" title="{{ trans('Students_trans.graduate_student') }}"><i class="fa fa-graduation-cap"></i></button>
+                                                <div class="dropdown show">
+                                                    <a class="btn btn-success btn-sm dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        {{trans('Students_trans.Processes')}}
+                                                    </a>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+
+                                                          <a href="{{route('students.edit',$student->id)}}" class="btn btn-info btn-sm" role="button" aria-pressed="true" title="{{ trans('Students_trans.Edit') }}"><i class="fa fa-edit"></i></a>
+                                                          <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#delete_student{{ $student->id }}" title="{{ trans('Students_trans.Delete') }}"><i class="fa fa-trash"></i></button>
+                                                          <a href="{{route('students.show',$student->id)}}" class="btn btn-warning btn-sm" role="button" aria-pressed="true"title="{{ trans('Students_trans.show') }}"><i class="fa fa-eye"></i></a>
+                                                          <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#graduate_student{{ $student->id }}" title="{{ trans('Students_trans.graduate_student') }}"><i class="fa fa-graduation-cap"></i></button>
+                                                          <a class="dropdown-item" href="{{route('fees_invoice.show',$student->id)}}" title=" {{trans('accounts.add_student_fees')}}"><i style="color: #0000cc" class="fa fa-edit"></i>&nbsp; {{trans('accounts.add_student_fees')}}</a>
+                                                          <a class="dropdown-item" href="{{route('receipt_student.show',$student->id)}}" title=" {{trans('accounts.receipt_student')}}"><i style="color: #0000cc" class="fa fa-edit"></i>&nbsp; {{trans('accounts.receipt_student')}}</a>
+                                                    </div>
+                                                </div>
                                             </td>
                                         </tr>
 
