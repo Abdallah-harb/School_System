@@ -86,6 +86,22 @@ Route::group(
             Route::post('delete/{id}','MainCategoriesController@graduate')->name('admin.mainCategories.delete');
         });
 
+
+             ################## Start Fees ###########
+        Route::group(['namespace' => 'Fees'],function(){
+
+            Route::resource('fees','FeesController');
+            Route::resource('fees_invoice','FeesInvoiceControoler');
+            Route::resource('receipt_student','ReceiptStudentController');
+            Route::resource('processing_fees','ProcessingFeesController');
+        });
+
+
+
+
+
+
+
 });
 
 

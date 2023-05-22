@@ -118,6 +118,21 @@
 
 
 
+                    <!-- the Fees -->
+                    <li>
+                        <a href="javascript:void(0);" data-toggle="collapse" data-target="#accounts">
+                            <div class="pull-left"><i class="ti-palette"></i><span
+                                    class="right-nav-text">{{trans('accounts.accounts')}}</span></div>
+                            <div class="pull-right"><i class="ti-plus"></i></div>
+                            <div class="clearfix"></div>
+                        </a>
+                        <ul id="accounts" class="collapse" data-parent="#sidebarnav">
+                            <li><a href="{{route('fees.index')}}">{{trans('accounts.study_fees')}}</a></li>
+                            <li><a href="{{route('fees_invoice.index')}}">{{trans('accounts.study_account')}}</a></li>
+                        </ul>
+                    </li>
+
+
                     <!-- menu item chat-->
                     <li>
                         <a href="chat-page.html"><i class="ti-comments"></i><span class="right-nav-text">Chat
