@@ -59,7 +59,7 @@
 
                     <!-- menu item Students-->
                     <li>
-                        <a href="javascript:void(0);" data-toggle="collapse" data-target="#students-menu"><i class="fas fa-user-graduate"></i>{{trans('Students_trans.students')}}<div class="pull-right"><i class="ti-plus"></i></div><div class="clearfix"></div></a>
+                        <a href="javascript:void(0);" data-toggle="collapse" data-target="#students-menu"><i class="fa fa-user"></i>{{trans('Students_trans.students')}}<div class="pull-right"><i class="ti-plus"></i></div><div class="clearfix"></div></a>
                             <ul id="students-menu" class="collapse">
                                 <li>
                                     <a href="javascript:void(0);" data-toggle="collapse" data-target="#Student_information">{{trans('Students_trans.Student_information')}}<div class="pull-right"><i class="ti-plus"></i></div><div class="clearfix"></div></a>
@@ -83,7 +83,7 @@
                                     </ul>
                                 </li>
                             </ul>
-                        </a>
+
                     </li>
 
                     <!-- students-->
@@ -121,7 +121,7 @@
                     <!-- the Fees -->
                     <li>
                         <a href="javascript:void(0);" data-toggle="collapse" data-target="#accounts">
-                            <div class="pull-left"><i class="ti-palette"></i><span
+                            <div class="pull-left"><i class="fa fa-money"></i><span
                                     class="right-nav-text">{{trans('accounts.accounts')}}</span></div>
                             <div class="pull-right"><i class="ti-plus"></i></div>
                             <div class="clearfix"></div>
@@ -139,7 +139,7 @@
                     <!-- menu item attendance-->
                     <li>
                         <a href="javascript:void(0);" data-toggle="collapse" data-target="#attendance">
-                            <div class="pull-left"><i class="ti-pie-chart"></i><span
+                            <div class="pull-left"><i class="fa fa-clipboard"></i><span
                                     class="right-nav-text">{{trans('Attendance.attendance')}}</span></div>
                             <div class="pull-right"><i class="ti-plus"></i></div>
                             <div class="clearfix"></div>
@@ -152,7 +152,7 @@
                     <!-- menu item subjects-->
                     <li>
                         <a href="javascript:void(0);" data-toggle="collapse" data-target="#subjects">
-                            <div class="pull-left"><i class="ti-pie-chart"></i><span
+                            <div class="pull-left"><i class="fa fa-book"></i><span
                                     class="right-nav-text">{{trans('Subjects.Subjects')}}</span></div>
                             <div class="pull-right"><i class="ti-plus"></i></div>
                             <div class="clearfix"></div>
@@ -162,6 +162,18 @@
                         </ul>
                     </li>
 
+                    <!-- menu item Exams-->
+                    <li>
+                        <a href="javascript:void(0);" data-toggle="collapse" data-target="#Exams">
+                            <div class="pull-left"><i class="fa fa-book"></i><span
+                                    class="right-nav-text">{{trans('Subjects.Subjects')}}</span></div>
+                            <div class="pull-right"><i class="ti-plus"></i></div>
+                            <div class="clearfix"></div>
+                        </a>
+                        <ul id="Exams" class="collapse" data-parent="#sidebarnav">
+                            <li> <a href="{{route('subjects.index')}}">{{trans('Subjects.Subjects_list')}}</a> </li>
+                        </ul>
+                    </li>
 
 
                     <!-- menu title -->

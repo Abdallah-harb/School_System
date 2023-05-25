@@ -23,36 +23,32 @@ class SubjectController extends Controller
 
     public function create()
     {
-
+        return $this->subject->create();
     }
 
 
     public function store(Request $request)
     {
-        //
+        return $this->subject->store($request);
     }
 
 
-    public function show($id)
-    {
-        //
-    }
 
 
     public function edit($id)
     {
-        //
+        return $this->subject->edit($id);
     }
 
 
     public function update(Request $request, $id)
     {
-        //
+        return $this->subject->update($request,$id);
     }
 
 
     public function destroy($id)
     {
-        //
+        return $this->subject->destroy($id);
     }
 }
