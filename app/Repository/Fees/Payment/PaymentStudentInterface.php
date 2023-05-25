@@ -1,23 +1,19 @@
 <?php
 
-namespace App\Repository\Fees\Processing;
+namespace App\Repository\Fees\Payment;
 
-interface ProcessingFeesInterface
+interface PaymentStudentInterface
 {
 
     public function index();
 
-    public function store($request);
-
     public function show($id);
+
+    public function store($request);
 
     public function edit($id);
 
     public function update($request);
 
     public function destroy($request);
-
-
-
-
 }

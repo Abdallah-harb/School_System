@@ -93,10 +93,26 @@ Route::group(
             Route::resource('fees','FeesController');
             Route::resource('fees_invoice','FeesInvoiceControoler');
             Route::resource('receipt_student','ReceiptStudentController');
+                                        //استبعاد فلوس
             Route::resource('processing_fees','ProcessingFeesController');
+                    //الطالب هيسترد فلوس دفعها وليكن هياخد فلوس الباص
+            Route::resource('PaymentStudent','PaymentStudentController');
+
         });
 
+          ###################### start Attendance ################
 
+        Route::group(['namespace' => 'Attendance'],function(){
+
+            Route::resource('attendance', 'AttendanceController');
+        });
+
+         ###################### start Subjects ################
+
+        Route::group(['namespace' => 'Subjects'],function(){
+
+            Route::resource('subjects', 'SubjectController');
+        });
 
 
 

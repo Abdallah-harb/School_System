@@ -27,8 +27,15 @@ return [
 
 
     'receipt_student'           => 'Catch Receipt',
+    'Fee_excluded'           => 'Fee excluded',
+    'Fee_excluded_edit'           => 'Edit Fee excluded',
+    'delet_Fees_excluded'           => 'delete Fee excluded',
+    'Fees_excluded'           => 'Fees excluded',
+    'student_account'           => 'student account',
 
+    'payment_student'           => 'Bills of exchange',
 
+    'payment_student_edit'           => 'Edit Bills of exchange',
 
 
 ];

@@ -26,6 +26,16 @@ return [
     'Warning_receipt_student'           => 'هل انته متأكد من عمليه الحذف .!',
 
     'receipt_student'           => 'سند قبض',
+    'Fee_excluded'           => 'أستبعاد رسوم',
+    'Fee_excluded_edit'           => 'تعديل أستبعاد رسوم',
+    'Fees_excluded'           => 'الرسوم المستبعده',
+    'delet_Fees_excluded'           => 'حذف الرسوم المستبعده',
+    'student_account'           => 'رصيد الطالب',
+
+
+    'payment_student'           => 'سندات الصرف',
+    'payment'           => 'سندالصرف',
+    'payment_student_edit'           => 'تعديل سندالصرف ',
 
 
 

@@ -16,7 +16,7 @@ class Section extends Model
     protected $guarded = [];
 
     public $timestamps = true;
-
+        //return classname from Grade and section
     public function classrooms(){
 
         return $this->belongsTo(Classroom::class,'classroom_id','id');

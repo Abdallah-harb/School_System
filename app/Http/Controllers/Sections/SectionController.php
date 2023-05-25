@@ -19,7 +19,9 @@ class SectionController extends Controller
    */
   public function index()
   {
+    //هرجع المراحل والفصول بتاعتها ومن الفصل هجيب الفصل الدراسى من الموديل فى السيكشن
       $grades_sections = Grade::with(['sections'])->get();
+
       $list_grades = Grade::all();
       $teachers = Teacher::all();
 
@@ -27,21 +29,9 @@ class SectionController extends Controller
 
   }
 
-  /**
-   * Show the form for creating a new resource.
-   *
-   * @return Response
-   */
-  public function create()
-  {
 
-  }
 
-  /**
-   * Store a newly created resource in storage.
-   *
-   * @return Response
-   */
+
   public function store(Request $request)
   {
 

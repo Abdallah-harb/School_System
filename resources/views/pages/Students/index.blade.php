@@ -74,6 +74,8 @@
                                                           <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#graduate_student{{ $student->id }}" title="{{ trans('Students_trans.graduate_student') }}"><i class="fa fa-graduation-cap"></i></button>
                                                           <a class="dropdown-item" href="{{route('fees_invoice.show',$student->id)}}" title=" {{trans('accounts.add_student_fees')}}"><i style="color: #0000cc" class="fa fa-edit"></i>&nbsp; {{trans('accounts.add_student_fees')}}</a>
                                                           <a class="dropdown-item" href="{{route('receipt_student.show',$student->id)}}" title=" {{trans('accounts.receipt_student')}}"><i style="color: #0000cc" class="fa fa-edit"></i>&nbsp; {{trans('accounts.receipt_student')}}</a>
+                                                          <a class="dropdown-item" href="{{route('processing_fees.show',$student->id)}}" title=" {{trans('accounts.receipt_student')}}"><i style="color: #0000cc" class="fa fa-edit"></i>&nbsp; {{trans('accounts.Fee_excluded')}}</a>
+                                                          <a class="dropdown-item" href="{{route('PaymentStudent.show',$student->id)}}" title=" {{trans('accounts.payment')}}"><i style="color: #0000cc" class="fa fa-edit"></i>&nbsp; {{trans('accounts.payment')}}</a>
                                                     </div>
                                                 </div>
                                             </td>

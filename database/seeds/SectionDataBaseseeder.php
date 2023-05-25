@@ -32,6 +32,7 @@ class SectionDataBaseseeder extends Seeder
                 'grade_id' => 1,
                 'classroom_id' => 1,
             ],
+
             [
                 'section_name' => [
                     'en' => 'Second ',
@@ -41,6 +42,7 @@ class SectionDataBaseseeder extends Seeder
                 'grade_id' => 1,
                 'classroom_id' => 1,
             ],
+
             [
                 'section_name' => [
                     'en' => 'First ',
