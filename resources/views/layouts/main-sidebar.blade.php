@@ -162,16 +162,16 @@
                         </ul>
                     </li>
 
-                    <!-- menu item Exams-->
+                    <!-- menu item quize-->
                     <li>
                         <a href="javascript:void(0);" data-toggle="collapse" data-target="#Exams">
                             <div class="pull-left"><i class="fa fa-book"></i><span
-                                    class="right-nav-text">{{trans('Subjects.Subjects')}}</span></div>
+                                    class="right-nav-text">{{trans('Exams.exams')}}</span></div>
                             <div class="pull-right"><i class="ti-plus"></i></div>
                             <div class="clearfix"></div>
                         </a>
                         <ul id="Exams" class="collapse" data-parent="#sidebarnav">
-                            <li> <a href="{{route('subjects.index')}}">{{trans('Subjects.Subjects_list')}}</a> </li>
+                            <li> <a href="{{route('quiz.index')}}">{{trans('Exams.exams_list')}}</a> </li>
                         </ul>
                     </li>
 
