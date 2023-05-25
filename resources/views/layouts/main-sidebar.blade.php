@@ -129,49 +129,41 @@
                         <ul id="accounts" class="collapse" data-parent="#sidebarnav">
                             <li><a href="{{route('fees.index')}}">{{trans('accounts.study_fees')}}</a></li>
                             <li><a href="{{route('fees_invoice.index')}}">{{trans('accounts.study_account')}}</a></li>
+                            <li><a href="{{route('processing_fees.index')}}">{{trans('accounts.Fees_excluded')}}</a></li>
+                            <li><a href="{{route('PaymentStudent.index')}}">{{trans('accounts.payment_student')}}</a></li>
                         </ul>
                     </li>
 
 
-                    <!-- menu item chat-->
+
+                    <!-- menu item attendance-->
                     <li>
-                        <a href="chat-page.html"><i class="ti-comments"></i><span class="right-nav-text">Chat
-                            </span></a>
-                    </li>
-                    <!-- menu item mailbox-->
-                    <li>
-                        <a href="mail-box.html"><i class="ti-email"></i><span class="right-nav-text">Mail
-                                box</span> <span class="badge badge-pill badge-warning float-right mt-1">HOT</span> </a>
-                    </li>
-                    <!-- menu item Charts-->
-                    <li>
-                        <a href="javascript:void(0);" data-toggle="collapse" data-target="#chart">
+                        <a href="javascript:void(0);" data-toggle="collapse" data-target="#attendance">
                             <div class="pull-left"><i class="ti-pie-chart"></i><span
-                                    class="right-nav-text">Charts</span></div>
+                                    class="right-nav-text">{{trans('Attendance.attendance')}}</span></div>
                             <div class="pull-right"><i class="ti-plus"></i></div>
                             <div class="clearfix"></div>
                         </a>
-                        <ul id="chart" class="collapse" data-parent="#sidebarnav">
-                            <li> <a href="chart-js.html">Chart.js</a> </li>
-                            <li> <a href="chart-morris.html">Chart morris </a> </li>
-                            <li> <a href="chart-sparkline.html">Chart Sparkline</a> </li>
+                        <ul id="attendance" class="collapse" data-parent="#sidebarnav">
+                            <li> <a href="{{route('attendance.index')}}">{{trans('Attendance.student_list')}}</a> </li>
                         </ul>
                     </li>
 
-                    <!-- menu font icon-->
+                    <!-- menu item subjects-->
                     <li>
-                        <a href="javascript:void(0);" data-toggle="collapse" data-target="#font-icon">
-                            <div class="pull-left"><i class="ti-home"></i><span class="right-nav-text">font
-                                    icon</span></div>
+                        <a href="javascript:void(0);" data-toggle="collapse" data-target="#subjects">
+                            <div class="pull-left"><i class="ti-pie-chart"></i><span
+                                    class="right-nav-text">{{trans('Subjects.Subjects')}}</span></div>
                             <div class="pull-right"><i class="ti-plus"></i></div>
                             <div class="clearfix"></div>
                         </a>
-                        <ul id="font-icon" class="collapse" data-parent="#sidebarnav">
-                            <li> <a href="fontawesome-icon.html">font Awesome</a> </li>
-                            <li> <a href="themify-icons.html">Themify icons</a> </li>
-                            <li> <a href="weather-icon.html">Weather icons</a> </li>
+                        <ul id="subjects" class="collapse" data-parent="#sidebarnav">
+                            <li> <a href="{{route('subjects.index')}}">{{trans('Subjects.Subjects_list')}}</a> </li>
                         </ul>
                     </li>
+
+
+
                     <!-- menu title -->
                     <li class="mt-10 mb-10 text-muted pl-4 font-medium menu-title">Widgets, Forms & Tables </li>
                     <!-- menu item Widgets-->

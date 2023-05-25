@@ -21,6 +21,6 @@ class DatabaseSeeder extends Seeder
          $this->call(SpecalizeDBSeeder::class);
          $this->call(TeacherDataBaseSeeder::class);
          $this->call(MyParentDataBaseSeeder::class);
-         $this->call(SectionDataBaseseeder::class);
+         //$this->call(SectionDataBaseseeder::class);
     }
 }
