@@ -4,6 +4,7 @@ return [
 
 
     'exams' => "Exams ",
+    'questions' => "questions ",
     'exams_name' => "Exam name",
     'exams_list' => "Exams List",
     'exams_add' => "Exam Add",

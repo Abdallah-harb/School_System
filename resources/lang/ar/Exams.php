@@ -4,6 +4,7 @@ return [
 
     'exams_list' => 'قائمه الاختبارات',
     'exams' => ' الاختبارات',
+    'questions' => ' الاسئله',
     'exams_name' => ' اسم الاختبار',
     'exams_add' => 'أضافه أمتحان',
     'exams_delete' => 'أضافه أمتحان',
