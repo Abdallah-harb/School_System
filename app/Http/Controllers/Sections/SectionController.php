@@ -19,11 +19,15 @@ class SectionController extends Controller
    */
   public function index()
   {
+
+     // return $setion->pluck('section_name')->toArray();
     //هرجع المراحل والفصول بتاعتها ومن الفصل هجيب الفصل الدراسى من الموديل فى السيكشن
       $grades_sections = Grade::with(['sections'])->get();
 
       $list_grades = Grade::all();
+
       $teachers = Teacher::all();
+
 
       return view('pages.sections.sections',compact('grades_sections','list_grades','teachers'));
 
@@ -69,34 +73,9 @@ class SectionController extends Controller
 
   }
 
-  /**
-   * Display the specified resource.
-   *
-   * @param  int  $id
-   * @return Response
-   */
-  public function show($id)
-  {
 
-  }
 
-  /**
-   * Show the form for editing the specified resource.
-   *
-   * @param  int  $id
-   * @return Response
-   */
-  public function edit($id)
-  {
 
-  }
-
-  /**
-   * Update the specified resource in storage.
-   *
-   * @param  int  $id
-   * @return Response
-   */
   public function update(Request $request)
   {
     try{
@@ -132,12 +111,7 @@ class SectionController extends Controller
 
   }
 
-  /**
-   * Remove the specified resource from storage.
-   *
-   * @param  int  $id
-   * @return Response
-   */
+
   public function destroy(Request $request)
   {
       $sections = Section::find($request->id)->delete();

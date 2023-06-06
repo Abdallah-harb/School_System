@@ -32,6 +32,7 @@ class ClassroomController extends Controller
 
 
       $Lists_Classes = $request->List_Classes;
+      
       foreach ($Lists_Classes as $list_class){
           $myclasses = new Classroom();
           $myclasses

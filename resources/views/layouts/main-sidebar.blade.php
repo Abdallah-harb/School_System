@@ -162,6 +162,19 @@
                         </ul>
                     </li>
 
+                    <!-- menu Library-->
+                    <li>
+                        <a href="javascript:void(0);" data-toggle="collapse" data-target="#Library">
+                            <div class="pull-left"><i class="fa fa-book"></i><span
+                                    class="right-nav-text">المكتبه</span></div>
+                            <div class="pull-right"><i class="ti-plus"></i></div>
+                            <div class="clearfix"></div>
+                        </a>
+                        <ul id="Library" class="collapse" data-parent="#sidebarnav">
+                            <li> <a href="{{route('library.index')}}">جميع الكتب</a> </li>
+                        </ul>
+                    </li>
+
                     <!-- menu item quize-->
                     <li>
                         <a href="javascript:void(0);" data-toggle="collapse" data-target="#Exams">
@@ -179,15 +192,15 @@
 
                     <!-- start Online classes -->
                     <li>
-                        <a href="javascript:void(0);" data-toggle="collapse" data-target="#Exams">
+                        <a href="javascript:void(0);" data-toggle="collapse" data-target="#classes">
                             <div class="pull-left"><i class="fa fa-book"></i><span
                                     class="right-nav-text">{{trans('Zoom.Online_classes')}}</span></div>
                             <div class="pull-right"><i class="ti-plus"></i></div>
                             <div class="clearfix"></div>
                         </a>
-                        <ul id="Exams" class="collapse" data-parent="#sidebarnav">
-                            <li> <a href="{{route('quiz.index')}}">{{trans('Zoom.integration_Direct_With_Zoom')}}</a> </li>
-                            <li> <a href="{{route('question.index')}}">{{trans('Zoom.integration_inDirect_With_Zoom')}}</a> </li>
+                        <ul id="classes" class="collapse" data-parent="#sidebarnav">
+                            <li> <a href="{{route('online_classes.index')}}">{{trans('Zoom.integration_Direct_With_Zoom')}}</a> </li>
+                            <li> <a href="{{route('online_classes.index')}}">{{trans('Zoom.integration_inDirect_With_Zoom')}}</a> </li>
                         </ul>
                     </li>
 
