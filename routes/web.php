@@ -123,6 +123,28 @@ Route::group(
 
         });
 
+        ###################### start Zoom [online classes ] ################
+
+        Route::group(['namespace' => 'Zoom'],function(){
+
+            Route::resource('online_classes', 'OnlineClassesController');
+
+            //offline classes
+            Route::get('/indirect', 'OnlineClassesController@indirectCreate')->name('indirect.create');
+            Route::post('/indirect', 'OnlineClassesController@storeIndirect')->name('indirect.store');
+
+        });
+
+        ################ Start Library ###############
+
+        Route::group(['namespace'=>'Library'],function(){
+
+            Route::resource('library','LibraryController');
+            Route::get('download_book/{filename}','LibraryController@download')->name('download_book');
+        });
+
+        ################ End  Library ###############
+
 
 
 

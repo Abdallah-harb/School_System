@@ -58,8 +58,7 @@
                                                                 <thead>
                                                                 <tr class="text-dark">
                                                                     <th>#</th>
-                                                                    <th>{{ trans('Sections_trans.Name_Section') }}
-                                                                    </th>
+                                                                    <th>{{ trans('Sections_trans.Name_Section') }} </th>
                                                                     <th>{{ trans('Sections_trans.Name_Class') }}</th>
                                                                     <th>{{ trans('Sections_trans.Status') }}</th>
                                                                     <th>{{ trans('Sections_trans.Processes') }}</th>
@@ -72,8 +71,7 @@
                                                                         <?php $i++; ?>
                                                                         <td>{{ $i }}</td>
                                                                         <td>{{ $list_Sections->section_name }}</td>
-                                                                        <td>{{ $list_Sections->classrooms->class_name }}
-                                                                        </td>
+                                                                        <td>{{ $list_Sections->classrooms->class_name }}</td>
                                                                         <td>
                                                                             @if ($list_Sections->status == 1)
                                                                                 <label

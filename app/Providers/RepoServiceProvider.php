@@ -4,6 +4,8 @@ namespace App\Providers;
 
 use App\Repository\Attendance\AttendanceInterface;
 use App\Repository\Attendance\AttendanceRepository;
+use App\Repository\Library\LibraryInterface;
+use App\Repository\Library\LibraryRepository;
 use App\Repository\Quizes\QuestionInterface;
 use App\Repository\Quizes\QuestionRepository;
 use App\Repository\Quizes\QuizInterface;
@@ -24,6 +26,8 @@ use App\Repository\Subjects\SubjectInterface;
 use App\Repository\Subjects\SubjectRepository;
 use App\Repository\TeacherRepository;
 use App\Repository\TeacherRepositoryInterface;
+use App\Repository\Zoom\OnlineClassesInterface;
+use App\Repository\Zoom\OnlineClassesRepostory;
 use Illuminate\Support\ServiceProvider;
 use App\Repository\StudentPattern\StudentInterface;
 use App\Repository\StudentPattern\studentRepository;
@@ -52,6 +56,8 @@ class RepoServiceProvider extends ServiceProvider
         $this->app->bind(SubjectInterface::class, SubjectRepository::class);
         $this->app->bind(QuizInterface::class, QuizRepository::class);
         $this->app->bind(QuestionInterface::class, QuestionRepository::class);
+        $this->app->bind(OnlineClassesInterface::class, OnlineClassesRepostory::class);
+        $this->app->bind(LibraryInterface::class, LibraryRepository::class);
     }
 
     /**

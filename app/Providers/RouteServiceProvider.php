@@ -77,4 +77,11 @@ class RouteServiceProvider extends ServiceProvider
             ->namespace($this->namespace)
             ->group(base_path('routes/api.php'));
     }
+    protected function mapTestRoutes()
+    {
+        Route::prefix('api')
+            //->middleware('api')
+            ->namespace($this->namespace)
+            ->group(base_path('routes/test.php'));
+    }
 }
